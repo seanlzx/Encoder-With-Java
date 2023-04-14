@@ -1,9 +1,8 @@
-## Ceaser Encoder and Decoder
+## Ceaser Encoder and Decoder (Now with CLI Interactivity)
 
 This Java program was done as an assessment for a job application.
 
 It was preferenced by the assessors, that OOP concepts be demonstrated in the program.
-
 
 ## The assessment requirements are as such
 

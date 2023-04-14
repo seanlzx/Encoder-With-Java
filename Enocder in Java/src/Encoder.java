@@ -6,10 +6,7 @@ public class Encoder {
     public Encoder(char[] user_reference_table, char user_offset) {
         this.reference_table_length = user_reference_table.length;
         reference_table = new char[this.reference_table_length];
-        for (int i = 0; i < this.reference_table_length; i++) {
-            reference_table[i] = user_reference_table[i];
-        }
-
+        System.arraycopy(user_reference_table, 0, reference_table, 0, reference_table_length);
         offset = user_offset;
     }
 
@@ -28,9 +25,7 @@ public class Encoder {
     public void set_offset(char[] user_reference_table) {
         this.reference_table_length = user_reference_table.length;
         this.reference_table = new char[this.reference_table_length];
-        for (int i = 0; i < this.reference_table_length; i++) {
-            this.reference_table[i] = user_reference_table[i];
-        }
+        System.arraycopy(user_reference_table, 0, reference_table, 0, reference_table_length);
     }
 
     public String encode(String plainText) {
